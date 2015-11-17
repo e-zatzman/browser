@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Browser</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<style>
+    #bigbox {
+        display: block;
+        margin: auto;
+    }   
+    li {
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+    <h1 class="jumbotron text-center">BROWSERS</h1>
+</header>
+
+
+<div class="rows">
+    
+    <div class="col-sm-2">
+       <ul class="list-unstyled">
+           <li><img id="ie_thumb" class="img-responsive" src="img/ie.png" alt="ie"></li>
+           <li><img id="chrome_thumb" class="img-responsive" src="img/chrome.png" alt="chrome"></li>
+           <li><img id="ff_thumb" class="img-responsive" src="img/firefox.png" alt="firefox"></li>
+       </ul>
+        
+    </div>
+    
+    <div class="col-sm-5">
+        <img id="bigbox" width="256" src="img/ie.png" alt="ie">
+        <h2 id="browsertitle" class="text-center">Internet Explorer</h2>
+        
+    </div>
+    
+</div>
+
+
+
+
+</div>
+
+<script>
+    /*================
+        VARIABLES
+    ==================*/
+    var ie_btn = document.getElementById("ie_thumb");
+    var chrome_btn = document.getElementById("chrome_thumb");
+    var firefox_btn = document.getElementById("ff_thumb");
+    var bigbrowser = document.getElementById("bigbox");
+    var changetitle = document.getElementById("browsertitle");
+    
+    /*================
+        FUNCTIONS
+    ==================*/
+    ie_btn.onmouseover = function () {
+        bigbrowser.src = "img/ie.png";
+        changetitle.innerHTML = "Internet Explorer";
+    }
+    
+    chrome_btn.onmouseover = function () {
+        bigbrowser.src = "img/chrome.png";
+        changetitle.innerHTML = "Chrome";
+    }
+    
+    firefox_btn.onmouseover = function () {
+        bigbrowser.src = "img/firefox.png";
+        changetitle.innerHTML = "Firefox";
+    }
+    
+    
+</script>
+
+
+
+</body>
+</html>
